@@ -411,7 +411,7 @@ Quantifying spatial autocorrelation
 :::
 
 ## Pixel uncertainty
-![](figures/parcel_uncertainty_vis.png){width=40% fig-align=center}
+![](figures/parcel_viz_1.png){width=100% fig-align=center}
 
 ## Total uncertainty 
 
@@ -458,7 +458,7 @@ Quantifying spatial autocorrelation
 :::
 
 
-## What does it all mean? 
+## The upshot 
 
 :::{.incremental}
 - Efficient
