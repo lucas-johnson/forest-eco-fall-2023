@@ -331,9 +331,9 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 ## Prediction uncertainty
 
 :::{.incremental}
-- uncertainty in reference data
-- uncertainty due to training the model on a limited sample
-- uncertainty due to the model not being able to represent
+- Uncertainty in reference data
+- Uncertainty due to training the model on a limited sample
+- Uncertainty due to the model not being able to represent
 all of the variation in the response variable
 :::
 
@@ -343,32 +343,72 @@ Wadoux et al. 2023 - https://doi.org/10.1111/2041-210X.14106
 
 ## Bootstrap variance
 
-- uncertainty in reference data
+:::{.incremental}
+- Uncertainty in reference data
 
-- uncertainty due to training the model on a limited sample
+- Uncertainty due to training the model on a limited sample
+:::
 
-## {background-image="figures/Pi_monte_carlo_all.gif" background-position="50%" background-size="40% auto"}
+:::footer
+Wadoux et al. 2023 - https://doi.org/10.1111/2041-210X.14106
+:::
 
-## Some error distributions and resampling
+## {background-image="figures/Pi_monte_carlo_all.gif" background-position="50%" background-size="38% auto"}
 
-![](figures/bootstrap_ex.png){width=100% fig-align=center}
+:::footer
+https://en.m.wikipedia.org/wiki/Monte_Carlo_method#/media/File:Pi_monte_carlo_all.gif
+:::
+
+## Error distributions and resampling
+
+![](figures/bootstrap_uncertainty_viz.png)
+
+:::footer
+Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
+:::
+
+## Error distributions and resampling
+
+![](figures/bootstrap_uncertainty_viz_top.png)
+
+:::footer
+Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
+:::
 
 
+## Error distributions and resampling
+
+![](figures/bootstrap_uncertainty_viz_bottom.png)
+
+:::footer
+Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
+:::
 
 ## Residual variance
 
-- uncertainty due to the model not being able to represent all of the variation in the response variable
+:::{.incremental}
 
-  - residual variance
-  - spatial autocorrelation of residuals
-  
-## Residual variance
+- Uncertainty due to the model not being able to represent all of the variation in the response variable
 
-![](figures/residual_variance_model.png){width=70% fig-align=center}
+  - Residual variance
+  - Spatial autocorrelation of residuals
 
-## Spatial correlation of residuals
+:::
 
-![](figures/variograms.png){width=70% fig-align=center}
+##
+::: columns 
+
+::: {.column width=50%}
+Mapping residual variance
+![](figures/residual_variance_model.png){width=100% fig-align=center}
+:::
+
+::: {.column width=50%}
+Quantifying spatial autocorrelation
+![](figures/variograms.png){width=100% fig-align=center}
+:::
+
+:::
 
 ## Pixel uncertainty
 ![](figures/parcel_uncertainty_vis.png){width=40% fig-align=center}
@@ -387,7 +427,7 @@ Wadoux et al. 2023 - https://doi.org/10.1111/2041-210X.14106
 
 :::
 
-## Parcel characteristics -> total variance
+## Parcel characteristics -> total uncertainty
 
 ::: columns
 
@@ -405,37 +445,55 @@ Wadoux et al. 2023 - https://doi.org/10.1111/2041-210X.14106
 
 :::
 
-## Summary, upshot, takeaways... what does it all mean? 
+## In summary
+
+:::{.incremental}
+
+- Snapshots of forest biomass stocks with aerial LiDAR point clouds
+
+- Monitoring and historical mapping of forest biomass stocks and stock changes with Landsat imagery
+
+- Parcel-level uncertainty estimation
+
+:::
 
 
-Upsides:
-- Efficient and low cost carbon monitoring system using federally supported public data, and open source tooling
-  - Landsat, FIA, FEMA/USGS funded LiDAR data. 
-  - These methods are reproducible and extensible to anywhere in the United States. Or really, anywhere with NFI data like FIA. 
+## What does it all mean? 
 
-- Our models provide precise information at the scales of management. Parcels/stands  
-- Coupled with management data, we can provide recommendations for best-practices for carbon sequestration outcomes  
+:::{.incremental}
+- Efficient
 
-- With new influxes of data, at least annually, we can update our models and maps yielding a monitoring system that can help NYS enforce compliance with incentive / easement programs.
+- Open data and tooling
 
-Downsides: 
+- Targeting parcels for protection or enrollment improved management programs
 
-- Landsat imagery only can tell us so much about forest structure. Greenness is correlated with biomass only to an extent. Saturation.
+- Monitoring, reporting, and verification
+
+:::
+
+## Room for improvement
+
+:::{.incremental}
+
+- Spectral information is limited
+
   - Saturation
-  - Ephemeral changes within canopy (defoliation. forest tent caterpillar) yields changes in biomass
-  - post-harvest recovery is too fast. Greens up before grows up. 
+  - Defoliation events
+  - Green-up before grow-up
   
 
-The world of AGB/Carbon mapping
+:::
+ 
 
-- This is in incredibly hot area. Lots of maps are being produced. 
-- Planet labs is offering this kind of data, but for an annual map of NYS it costs ~$1,412,000. So x 30 for 1990-2019. But we don't know where their reference data comes from. Or how accurate/precise/uncertain their estimates 
-- Why not use a global map? People are making these. That seems like a nice idea. 
-  - If there's a region that otherwise lacks data, perhaps the global map data is better than none.
-  - And the consistency of a single global carbon map to rule them all sounds enticing. Understanding global trends is important!
-  - But people who manage the land don't respond to some global government. 
-  - And regional efforts like ours offer precision and accuracy that inspires trust. Not to mention the partnerships and conversations that my team has had. We think it's a really good model, that is broadly extensible. And especially useful to influence policy and management decisions to achieve better outcomes for climate. 
+## NYS/ESF against the world...
 
+:::{.incremental}
+- Pay-to-play data
+
+- Global maps
+
+- Regional/local efforts with open data and tooling are necessary
+:::
 
 ## Thank you!{background-image="figures/esf_trees.jpg" background-position="80% 50%" background-size="35% auto"}
 

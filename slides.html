@@ -717,9 +717,9 @@
 <h2>Prediction uncertainty</h2>
 <div>
 <ul>
-<li class="fragment">uncertainty in reference data</li>
-<li class="fragment">uncertainty due to training the model on a limited sample</li>
-<li class="fragment">uncertainty due to the model not being able to represent all of the variation in the response variable</li>
+<li class="fragment">Uncertainty in reference data</li>
+<li class="fragment">Uncertainty due to training the model on a limited sample</li>
+<li class="fragment">Uncertainty due to the model not being able to represent all of the variation in the response variable</li>
 </ul>
 </div>
 <div class="footer">
@@ -728,46 +728,63 @@
 </section>
 <section id="bootstrap-variance" class="slide level2 center">
 <h2>Bootstrap variance</h2>
+<div>
 <ul>
-<li><p>uncertainty in reference data</p></li>
-<li><p>uncertainty due to training the model on a limited sample</p></li>
+<li class="fragment"><p>Uncertainty in reference data</p></li>
+<li class="fragment"><p>Uncertainty due to training the model on a limited sample</p></li>
 </ul>
+</div>
+<div class="footer">
+<p>Wadoux et al.&nbsp;2023 - https://doi.org/10.1111/2041-210X.14106</p>
+</div>
 </section>
-<section id="section-6" class="slide level2 center" data-background-image="figures/Pi_monte_carlo_all.gif" data-background-position="50%" data-background-size="40% auto">
+<section id="section-6" class="slide level2 center" data-background-image="figures/Pi_monte_carlo_all.gif" data-background-position="50%" data-background-size="38% auto">
 <h2></h2>
+<div class="footer">
+<p>https://en.m.wikipedia.org/wiki/Monte_Carlo_method#/media/File:Pi_monte_carlo_all.gif</p>
+</div>
 </section>
-<section id="some-error-distributions-and-resampling" class="slide level2 center">
-<h2>Some error distributions and resampling</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/bootstrap_ex.png" style="width:100.0%"></p>
-</figure>
+<section id="error-distributions-and-resampling" class="slide level2 center">
+<h2>Error distributions and resampling</h2>
+<p><img data-src="figures/bootstrap_uncertainty_viz.png"></p>
+<div class="footer">
+<p>Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples</p>
+</div>
+</section>
+<section id="error-distributions-and-resampling-1" class="slide level2 center">
+<h2>Error distributions and resampling</h2>
+<p><img data-src="figures/bootstrap_uncertainty_viz_top.png"></p>
+<div class="footer">
+<p>Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples</p>
+</div>
+</section>
+<section id="error-distributions-and-resampling-2" class="slide level2 center">
+<h2>Error distributions and resampling</h2>
+<p><img data-src="figures/bootstrap_uncertainty_viz_bottom.png"></p>
+<div class="footer">
+<p>Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples</p>
 </div>
 </section>
 <section id="residual-variance" class="slide level2 center">
 <h2>Residual variance</h2>
+<div>
 <ul>
-<li><p>uncertainty due to the model not being able to represent all of the variation in the response variable</p>
+<li class="fragment"><p>Uncertainty due to the model not being able to represent all of the variation in the response variable</p>
 <ul>
-<li>residual variance</li>
-<li>spatial autocorrelation of residuals</li>
+<li class="fragment">Residual variance</li>
+<li class="fragment">Spatial autocorrelation of residuals</li>
 </ul></li>
 </ul>
-</section>
-<section id="residual-variance-1" class="slide level2 center">
-<h2>Residual variance</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/residual_variance_model.png" style="width:70.0%"></p>
-</figure>
 </div>
 </section>
-<section id="spatial-correlation-of-residuals" class="slide level2 center">
-<h2>Spatial correlation of residuals</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/variograms.png" style="width:70.0%"></p>
-</figure>
+<section id="section-7" class="slide level2 center">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Mapping residual variance <img data-src="figures/residual_variance_model.png" style="width:100.0%" data-fig-align="center"></p>
+</div><div class="column" style="width:50%;">
+<p>Quantifying spatial autocorrelation <img data-src="figures/variograms.png" style="width:100.0%" data-fig-align="center"></p>
+</div>
 </div>
 </section>
 <section id="pixel-uncertainty" class="slide level2 center">
@@ -796,8 +813,8 @@
 </div>
 </div>
 </section>
-<section id="parcel-characteristics---total-variance" class="slide level2 center">
-<h2>Parcel characteristics -&gt; total variance</h2>
+<section id="parcel-characteristics---total-uncertainty" class="slide level2 center">
+<h2>Parcel characteristics -&gt; total uncertainty</h2>
 <div class="columns">
 <div class="column" style="width:20%;">
 <ul>
@@ -815,36 +832,49 @@
 </div>
 </div>
 </section>
-<section id="summary-upshot-takeaways-what-does-it-all-mean" class="slide level2 center">
-<h2>Summary, upshot, takeaways… what does it all mean?</h2>
-<p>Upsides: - Efficient and low cost carbon monitoring system using federally supported public data, and open source tooling - Landsat, FIA, FEMA/USGS funded LiDAR data. - These methods are reproducible and extensible to anywhere in the United States. Or really, anywhere with NFI data like FIA.</p>
+<section id="in-summary" class="slide level2 center">
+<h2>In summary</h2>
+<div>
 <ul>
-<li><p>Our models provide precise information at the scales of management. Parcels/stands<br>
-</p></li>
-<li><p>Coupled with management data, we can provide recommendations for best-practices for carbon sequestration outcomes</p></li>
-<li><p>With new influxes of data, at least annually, we can update our models and maps yielding a monitoring system that can help NYS enforce compliance with incentive / easement programs.</p></li>
+<li class="fragment"><p>Snapshots of forest biomass stocks with aerial LiDAR point clouds</p></li>
+<li class="fragment"><p>Monitoring and historical mapping of forest biomass stocks and stock changes with Landsat imagery</p></li>
+<li class="fragment"><p>Parcel-level uncertainty estimation</p></li>
 </ul>
-<p>Downsides:</p>
+</div>
+</section>
+<section id="what-does-it-all-mean" class="slide level2 center">
+<h2>What does it all mean?</h2>
+<div>
 <ul>
-<li>Landsat imagery only can tell us so much about forest structure. Greenness is correlated with biomass only to an extent. Saturation.
+<li class="fragment"><p>Efficient</p></li>
+<li class="fragment"><p>Open data and tooling</p></li>
+<li class="fragment"><p>Targeting parcels for protection or enrollment improved management programs</p></li>
+<li class="fragment"><p>Monitoring, reporting, and verification</p></li>
+</ul>
+</div>
+</section>
+<section id="room-for-improvement" class="slide level2 center">
+<h2>Room for improvement</h2>
+<div>
 <ul>
-<li>Saturation</li>
-<li>Ephemeral changes within canopy (defoliation. forest tent caterpillar) yields changes in biomass</li>
-<li>post-harvest recovery is too fast. Greens up before grows up.</li>
+<li class="fragment"><p>Spectral information is limited</p>
+<ul>
+<li class="fragment">Saturation</li>
+<li class="fragment">Defoliation events</li>
+<li class="fragment">Green-up before grow-up</li>
 </ul></li>
 </ul>
-<p>The world of AGB/Carbon mapping</p>
+</div>
+</section>
+<section id="nysesf-against-the-world" class="slide level2 center">
+<h2>NYS/ESF against the world…</h2>
+<div>
 <ul>
-<li>This is in incredibly hot area. Lots of maps are being produced.</li>
-<li>Planet labs is offering this kind of data, but for an annual map of NYS it costs ~$1,412,000. So x 30 for 1990-2019. But we don’t know where their reference data comes from. Or how accurate/precise/uncertain their estimates</li>
-<li>Why not use a global map? People are making these. That seems like a nice idea.
-<ul>
-<li>If there’s a region that otherwise lacks data, perhaps the global map data is better than none.</li>
-<li>And the consistency of a single global carbon map to rule them all sounds enticing. Understanding global trends is important!</li>
-<li>But people who manage the land don’t respond to some global government.</li>
-<li>And regional efforts like ours offer precision and accuracy that inspires trust. Not to mention the partnerships and conversations that my team has had. We think it’s a really good model, that is broadly extensible. And especially useful to influence policy and management decisions to achieve better outcomes for climate.</li>
-</ul></li>
+<li class="fragment"><p>Pay-to-play data</p></li>
+<li class="fragment"><p>Global maps</p></li>
+<li class="fragment"><p>Regional/local efforts with open data and tooling are necessary</p></li>
 </ul>
+</div>
 </section>
 <section id="thank-you" class="slide level2 center" data-background-image="figures/esf_trees.jpg" data-background-position="80% 50%" data-background-size="35% auto">
 <h2>Thank you!</h2>
