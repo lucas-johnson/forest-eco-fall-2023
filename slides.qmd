@@ -465,7 +465,7 @@ Quantifying spatial autocorrelation
 
 - Open data and tooling
 
-- Targeting parcels for protection or enrollment improved management programs
+- Targeting parcels for protection or enrollment in improved management programs
 
 - Monitoring, reporting, and verification
 
