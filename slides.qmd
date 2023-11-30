@@ -554,7 +554,9 @@ Cartoon CC-BY 4.0 Allison Horst
 
 ## {background-image="movie/agb.gif" background-size="85% auto" background-position="50% 50%"}
 
-## {background-image="movie/agb_annotated.gif" background-size="70% auto" background-position="50% 50%"}
+## {background-image="figures/agb_mov_grow.png" background-size="70% auto" background-position="50% 50%"}
+
+## {background-image="figures/agb_mov_loss.png" background-size="70% auto" background-position="50% 50%"}
 
 ## Management records {background-image="figures/multi_harvest.png" background-size="38% auto" background-position="80% 50%"}
 
@@ -1102,12 +1104,12 @@ Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-
 ::: {.column width="30%"}
 - 1000 iterations
 - For each
-  - New reference data
-      - tree estimates
-      - plot locations
   - New plot sample
-    - new model 
-    - new predictions for each pixel
+  - New reference data
+    - Tree estimates
+    - Plot locations
+  - New model 
+  - New predictions for each pixel
 - Assess variability/precision of predictions over the 1000 iterations
 :::
 
