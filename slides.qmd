@@ -1124,10 +1124,13 @@ Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-
 ## Pixel uncertainty
 ![](figures/parcel_viz_1_lite.png){width=100% fig-align='center'}
 
-## Upshot of uncertainty estimation
+## Upshot of accuracy and uncertainty
 
 :::{.incremental}
-- We can identify areas of increased uncertainty or confidence in our maps
+
+- Describe agreement with FIA across a range of scales
+
+- Can identify areas of increased uncertainty or confidence in our maps
 
 - Help map users make decisions
 
